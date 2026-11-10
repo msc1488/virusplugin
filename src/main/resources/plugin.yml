@@ -1,0 +1,18 @@
+name: VirusPlugin
+version: 1.0.0
+main: ru.altergen.virus.VirusPlugin
+api-version: '1.21'
+author: altergen
+
+description: Кастомный вирус с этапами болезни и лечебным отваром.
+
+commands:
+  virus:
+    description: Управление вирусом
+    usage: /virus <infect|cure> <ник>
+    permission: virus.admin
+
+permissions:
+  virus.admin:
+    description: Позволяет заражать и исцелять игроков
+    default: op
